@@ -27,3 +27,11 @@ subparsers:
                         - newton
                         - ocata
                         - pike
+
+            - title: Overcloud instance high-availability
+              options:
+                  instance_ha:
+                      type: Bool
+                      default: no
+                      help: |
+                          Enable high-availability for instances

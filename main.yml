@@ -7,3 +7,7 @@
 - name: Configure virt fencing
   include: virt-fencing.yml
   when: install.version|openstack_release < 11 and 'hypervisor' in groups
+
+- name: Configure instance high-availability
+  include: instance-ha.yml
+  when: install.instance_ha
